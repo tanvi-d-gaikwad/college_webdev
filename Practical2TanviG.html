@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Webpage with Image, Link, and Nested Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }   <!--styles the body with CSS-->
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+        }   <!--styles the tables and nested tables-->
+        img {
+            width: 100px;
+            height: auto;
+        }   <!--the measurements of the image needed on the web page-->
+    </style>
+</head>
+<body>
+
+    <h1>My Sample Webpage</h1>
+
+    <!-- Image -->
+    <h2>Image Example</h2>  <!--h2 is used for header, which contains 3 types, h3, h2, h1, where h1 is the largest-->
+    <img src="https://tse1.mm.bing.net/th/id/OIP.Lw5fi5xCtYfoaG7B5qVF2QHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Sample Image">  <!--alt is used when the image isn't on display, this text shows to get the context of the image-->
+
+    <!-- Hyperlink -->
+    <h2>Hyperlink Example</h2>
+    <p>Visit <a href="https://www.microsoft.com" target="_blank">Microsoft</a> for more information.</p>    <!--target here means the hyperlink will open on a new tab rather than opening in the same tab-->
+
+    <!-- Nested Table -->
+    <h2>Nested Table Example</h2>
+    <table>                                                 <!--first table is formed-->
+        <tr>                                                <!--first row is formed. here, th signifies table row-->
+            <th>Category</th>                               <!--Catergory is added as a header as th(table header -- bold) is used.-->
+            <th>Details</th>                                <!--Details is added as a second header in the same row-->
+        </tr>                                               <!--first row is done-->
+        <tr>                                                <!--second row is added-->
+            <td>Fruits</td>                                 <!--fruits is added as a data in the first column of the second row-->
+            <td>                                            <!--data is about to be added in second column of the second row-->
+                <table>                                     <!--new table (first nested table) is made in second column and second row-->
+                    <tr>                                    <!--first row is made of the first nested table-->
+                        <th>Name</th>                       <!--first nested table's first header (first column, second row)-->
+                        <th>Color</th>                      <!--first nested table's second header (second column, second row)-->
+                    </tr>                                   <!--first row of first's nested table is done-->
+                    <tr>                                    <!--second row of first's nested table is created -->
+                        <td>Apple</td>                      <!--data is added in (first column,second row) of first's nested table-->
+                        <td>Red</td>                        <!--data is added in (second column,second row) of first's nested table-->
+                    </tr>                                   <!--second row of first's nested table is done-->
+                    <tr>                                    <!--third row of first's nested table is created-->
+                        <td>Banana</td>                     <!--data is added in (first column,third row) of first's nested table-->
+                        <td>Yellow</td>                     <!--data is added in (second column,third row) of first's nested table-->
+                    </tr>                                   <!--third row of first's nested table is done-->
+                </table>                                    <!--first nested table is done which is loacted in (second column, second row) of the original table-->
+            </td>                                           <!--data to be added in (second column, second row) of original table is done-->
+        </tr>                                               <!--second row is done-->                     
+        <tr>                                                <!--third row is created-->
+            <td>Vegetables</td>                             <!--vegetables is added as a data in the first column of the third row-->
+            <td>                                            <!--data is about to be added in second column of the third row-->
+                <table>                                     <!--new table (second nested table) is made in second column and third row-->
+                    <tr>                                    <!--first row is made of the second nested table-->
+                        <th>Name</th>                       <!--second nested table's first header (first column, second row)-->
+                        <th>Color</th>                      <!--second nested table's second header (second column, second row)-->
+                    </tr>                                   <!--first row of secomd's nested table is done-->
+                    <tr>                                    <!--second row of second's nested table is created -->
+                        <td>Carrot</td>                     <!--data is added in (first column,second row) of second's nested table-->
+                        <td>Orange</td>                     <!--data is added in (second column,second row) of second's nested table-->
+                    </tr>                                   <!--second row of second's nested table is done-->
+                    <tr>                                    <!--third row of second's nested table is created-->
+                        <td>Spinach</td>                    <!--data is added in (first column,third row) of second's nested table-->
+                        <td>Green</td>                      <!--data is added in (second column,third row) of second's nested table-->
+                    </tr>                                   <!--third row of second's nested table is done-->
+                </table>                                    <!--second nested table is done which is loacted in (second column, third row) of the original table-->
+            </td>                                           <!--data to be added in (second column, third row) of original table is done-->
+        </tr>                                               <!--third row is done-->
+    </table>                                                <!--original table is done-->
+
+</body>
+</html>
