@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=eie-width, initial-scale=1.0">
+  <title>CSS Styling Example</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Internal CSS -->
+  <style>
+    h1 {
+      color: darkblue;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    table {
+      width: 80%;
+      border-collapse: collapse;
+      margin: 20px auto;
+    }
+
+    th, td {
+      border: 2px solid #333;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: lightgray;
+    }
+  </style>
+</head>
+<body>
+
+  <!--Heading-->
+  <h1>Student Information</h1>
+
+  <h2 style="color:green; font-family:Verdana;text-align:center;">Inline Styled Heading</h2>
+
+  <!--table-->
+  <table>
+    <tr>
+      <th>Roll no.</th>
+      <th>Name</th>
+      <th>Grade</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>John</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Mary</td>
+      <td>B</B></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Augustine</td>
+      <td>A+</td>
+    </tr>
+  </table>
+
+  <h2 class="external">External CSS Styled Table</h2>
+  <table class="external">
+    <tr>
+      <th>Subject</th>
+      <th>Marks</th>
+    </tr>
+    <tr>
+      <td>Math</td>
+      <td>95</td>
+    </tr>
+    <tr>
+      <td>Science</td>
+      <td>90</td>
+    </tr>
+    </table>
+</body>
+</html>
