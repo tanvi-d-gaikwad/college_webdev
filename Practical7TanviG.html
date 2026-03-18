@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Content with DOM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        #dynamicContent {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #333;
+            background-color: #f4f4f4;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Dynamic Content Example</h2>
+<p>Click the buttons below to update the content dynamically using JavaScript.</p>
+
+<button onclick="showGreeting()">Show Greeting</button>
+<button onclick="showDate()">Show Current Date & Time</button>
+<button onclick="changeColor()">Change Background Color</button>
+
+<div id="dynamicContent">
+    <p>Content will appear here...</p>
+</div>
+
+<script>
+// Function to show a greeting message
+function showGreeting() {
+    const container = document.getElementById("dynamicContent");
+    container.innerHTML = "<h3>Hello, Welcome to the Dynamic Page!</h3>";
+}
+
+// Function to show current date and time
+function showDate() {
+    const container = document.getElementById("dynamicContent");
+    const now = new Date();
+    container.innerHTML = `<p>Current Date & Time: ${now.toLocaleString()}</p>`;
+}
+
+// Function to change background color dynamically
+function changeColor() {
+    const container = document.getElementById("dynamicContent");
+    const colors = ["#f4a261", "#2a9d8f", "#e76f51", "#264653", "#e9c46a"];
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    container.style.backgroundColor = randomColor;
+    container.innerHTML = `<p>Background color changed to: ${randomColor}</p>`;
+}
+</script>
+
+</body>
+</html>

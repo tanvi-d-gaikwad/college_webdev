@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Form</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 50px;
+        }
+        form {
+            display: inline-block;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+<h2>User Registration Form</h2>
+
+<form>
+    Name: <input type="text" name="name" required><br><br>
+    
+    Email: <input type="email" name="email" required><br><br>
+    
+    Gender:
+    <input type="radio" name="gender" value="Male" required> Male
+    <input type="radio" name="gender" value="Female"> Female
+    <br><br>
+    
+    Date of Birth:
+    <input type="date" name="dob" required><br><br>
+    
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
